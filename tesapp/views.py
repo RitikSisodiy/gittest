@@ -9,4 +9,4 @@ def pull(request):
         for data in request.POST:
             res[data] = request.POST[data]
             postdata(data=str(res)).save()
-    return HttpResponse('success')
+    return HttpResponse('successvv')
