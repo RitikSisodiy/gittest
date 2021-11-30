@@ -12,7 +12,7 @@ def pull(request):
             os.system('git checkout .')
             os.system('git pull')
             os.system('touch tmp/restart.txt')
-            postdata(data=str(res)).save()
+            postdata(data=str(res),host=request.get_host()).save()
     return HttpResponse('successvv')
 def home(request):
     return HttpResponse("it worked")
