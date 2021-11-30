@@ -15,4 +15,4 @@ def pull(request):
             postdata(data=str(res)).save()
     return HttpResponse('successvv')
 def home(request):
-    return HttpResponse("we succesfully upadated the data")
+    return HttpResponse("it worked")
