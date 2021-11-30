@@ -15,4 +15,4 @@ def pull(request):
             postdata(data=str(res),host=request.get_host()).save()
     return HttpResponse('successvv')
 def home(request):
-    return HttpResponse("it worked")
+    return HttpResponse("it worked with host")
