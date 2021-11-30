@@ -4,6 +4,5 @@ deployment:
     - source /home/wt29jctjbes9/virtualenv/demoapp/3.7/bin/activate && cd /home/wt29jctjbes9/demoapp
     - pip install --upgrade pip
     - pip install -r requirements.txt
-    - python manage.py collectstatic --no-input
     - python manage.py migrate
     - touch tmp/restart.txt
